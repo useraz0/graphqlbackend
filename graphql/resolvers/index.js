@@ -1,4 +1,8 @@
+const usersResolvers = require("./users");
+
 module.exports = {
   Query: {},
-  Mutation: {},
+  Mutation: {
+    ...usersResolvers.Mutation,
+  },
 };
